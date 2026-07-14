@@ -66,12 +66,10 @@
       "language": "1041",
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true
-    },
-    "publish": null
+    }
   },
   "devDependencies": {
     "electron": "^28.3.3",
-    "electron-builder": "^24.13.3",
-    "electron-publisher-never": "^24.13.3"
+    "electron-builder": "^24.13.3"
   }
 }
