@@ -31,7 +31,7 @@
         }
       ],
       "icon": "build/icon.ico"
-    ],
+    },
     "mac": {
       "target": [
         {
