@@ -18,6 +18,8 @@ jobs:
         run: npm install
       - name: Build Windows installer
         run: npm run dist:win
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # 🔑 トークンを追加
       - name: Upload Windows artifact
         uses: actions/upload-artifact@v4
         with:
@@ -37,6 +39,8 @@ jobs:
         run: npm install
       - name: Build Mac DMG
         run: npm run dist:mac
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # 🔑 トークンを追加
       - name: Upload Mac artifact
         uses: actions/upload-artifact@v4
         with:
